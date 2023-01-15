@@ -1,0 +1,12 @@
+CRITICAL - 2023-01-13 21:42:44 --> syntax error, unexpected token ";"
+in APPPATH/Views/Auth/layout.php on line 53.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('App\\Views\\Auth\\layout', [], true)
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('App\\Views\\Auth\\login', [], true)
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(412): view('App\\Views\\Auth\\login', [...])
+ 5 VENDORPATH/myth/auth/src/Controllers/AuthController.php(58): Myth\Auth\Controllers\AuthController->_render('App\\Views\\Auth\\login', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->login()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')

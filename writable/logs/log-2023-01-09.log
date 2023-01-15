@@ -1,0 +1,449 @@
+ERROR - 2023-01-09 01:32:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'vachar(255) NOT NULL UNIQUE,
+	`nama_pencari` varchar(255) NOT NULL,
+	`tempat_lah' at line 2 in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/app/Database/Migrations/2023-01-09-064955_Transaksi.php(34): CodeIgniter\Database\Forge->createTable('trx_pencari_kos...', true)
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(869): App\Database\Migrations\Transaksi->up()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-01-09 01:33:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'vachar(255) NOT NULL UNIQUE,
+	`nama_pencari` varchar(255) NOT NULL,
+	`tempat_lah' at line 2 in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/app/Database/Migrations/2023-01-09-064955_Transaksi.php(34): CodeIgniter\Database\Forge->createTable('trx_pencari_kos...', true)
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(869): App\Database\Migrations\Transaksi->up()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-01-09 01:34:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'vachar(255) NOT NULL UNIQUE,
+	`nama_pencari` varchar(255) NULL,
+	`tempat_lahir` ' at line 2 in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/app/Database/Migrations/2023-01-09-064955_Transaksi.php(34): CodeIgniter\Database\Forge->createTable('trx_pencari_kos...', true)
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(869): App\Database\Migrations\Transaksi->up()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-01-09 01:34:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'vachar(255) NOT NULL UNIQUE,
+	`nama_pencari` varchar(255) NULL,
+	`tempat_lahir` ' at line 2 in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/app/Database/Migrations/2023-01-09-064955_Transaksi.php(34): CodeIgniter\Database\Forge->createTable('trx_pencari_kos...', true)
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(869): App\Database\Migrations\Transaksi->up()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-01-09 02:05:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'vachar(255) NOT NULL UNIQUE,
+	`nama_pencari` varchar(255) NULL,
+	`tempat_lahir` ' at line 2 in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/app/Database/Migrations/2023-01-09-064955_Transaksi.php(34): CodeIgniter\Database\Forge->createTable('trx_pencari_kos...', true)
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(869): App\Database\Migrations\Transaksi->up()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-01-09 02:06:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'vachar(255) NOT NULL UNIQUE,
+	`nama_pencari` varchar(255) NULL,
+	`tempat_lahir` ' at line 2 in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/app/Database/Migrations/2023-01-09-064955_Transaksi.php(34): CodeIgniter\Database\Forge->createTable('trx_pencari_kos...', true)
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(869): App\Database\Migrations\Transaksi->up()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(918): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(345): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+CRITICAL - 2023-01-09 02:11:27 --> strong_password is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('strong_password')
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12071626', [...], [...])
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(164): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 02:12:01 --> strong_password is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('strong_password')
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12071626**', [...], [...])
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(164): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 02:28:31 --> strong_password is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('strong_password')
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', 'HelmiTampan120**', [...], [...])
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(164): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 02:30:50 --> strong_password is not a valid rule.
+in SYSTEMPATH/Validation/Validation.php on line 323.
+ 1 SYSTEMPATH/Validation/Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('strong_password')
+ 2 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('password', 'password', '12071626**', [...], [...])
+ 3 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 VENDORPATH/myth/auth/src/Controllers/AuthController.php(164): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:00 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:02 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:02 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:03 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:03 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:03 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:03 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:04 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:04 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:36 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:38 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:38 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:39 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:39 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:39 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:39 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:52:40 --> login filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:39 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:40 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:41 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:41 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:42 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:42 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:42 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:43 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:43 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:43 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:44 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:45 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:45 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-09 20:53:45 --> isLoggedIn filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 493.
+ 1 SYSTEMPATH/Filters/Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('isLoggedIn')
+ 2 SYSTEMPATH/Filters/Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+ 3 SYSTEMPATH/Filters/Filters.php(163): CodeIgniter\Filters\Filters->initialize('/')
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('/', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
