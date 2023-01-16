@@ -4,14 +4,13 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-
 use App\Models\MskamarModel;
 
-class Mskamar extends BaseController
-{
+class Mskamar extends BaseController {
 	
     protected $mskamarModel;
     protected $validation;
+	protected $helpers = ['url', 'form'];
 	
 	public function __construct()
 	{

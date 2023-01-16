@@ -120,19 +120,19 @@ class Master extends Migration
         $this->forge->createTable('ms_penghuni', true);
 
         // Master data calon
-        $fields = [
-            'id'     => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
+        // $fields = [
+        //     'id'     => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
             
-            'status'   => ['type' => 'varchar', 'constraint' => 255, 'null' => true],
-            'created_by'   => ['type' => 'varchar', 'constraint' => 255, 'null' => true],
-            'updated_by'    => ['type' => 'varchar', 'constraint' => 255, 'null' => true],
-            'created_date datetime default current_timestamp',
-            'date_update' => ['type' => 'varchar', 'constraint' => 255, 'null' => true, 'on update' => 'NOW()'],
-            'delete_'     => ['type' => 'ENUM', 'constraint' => ['1', '0'],'default' => '0']
-        ];
-        $this->forge->addField($fields);
-        $this->forge->addKey('id', true);
-        $this->forge->createTable('ms_penyewa', true);
+        //     'status'   => ['type' => 'varchar', 'constraint' => 255, 'null' => true],
+        //     'created_by'   => ['type' => 'varchar', 'constraint' => 255, 'null' => true],
+        //     'updated_by'    => ['type' => 'varchar', 'constraint' => 255, 'null' => true],
+        //     'created_date datetime default current_timestamp',
+        //     'date_update' => ['type' => 'varchar', 'constraint' => 255, 'null' => true, 'on update' => 'NOW()'],
+        //     'delete_'     => ['type' => 'ENUM', 'constraint' => ['1', '0'],'default' => '0']
+        // ];
+        // $this->forge->addField($fields);
+        // $this->forge->addKey('id', true);
+        // $this->forge->createTable('ms_penyewa', true);
 
         // Master data biaya2
         $fields = [

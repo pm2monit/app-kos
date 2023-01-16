@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Mazer Admin Dashboard</title>
-    <link rel="stylesheet" href="/assets/css/main/app.css" />
-    <link rel="stylesheet" href="/assets/css/pages/auth.css" />
-    <link rel="stylesheet" href="/assets/css/main/custom.css" />
+    <title>Login - App Kostel</title>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/main/app.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/pages/auth.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/main/custom.css" />
     <link
       rel="shortcut icon"
       href="/assets/images/logo/favicon.svg"
