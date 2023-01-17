@@ -26,7 +26,7 @@
         <div class="col-lg-5 col-12">
             <div id="auth-left">
                 <div class="auth-logo">
-                    <a href="<?php echo base_url(); ?>"><img src="/assets/images/logo/logo.svg" alt="Logo"/></a>
+                    <a href="<?php echo base_url(); ?>"><img src="/assets/images/logo/logo.png" alt="Logo"/></a>
                 </div>
                 
                 <!-- <p class="auth-subtitle mb-5">

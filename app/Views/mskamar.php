@@ -2,7 +2,7 @@
 
 <?= $this->section("content") ?>
 <div class="page-heading">
-    <h3>Data Master Penghuni</h3>
+    <h3>Data Master Kamar</h3>
 </div>
 
 <div class="page-content">
@@ -42,4 +42,4 @@
       
 
 
-<?= $this->endSection() ?>
+  <?= $this->endSection() ?>

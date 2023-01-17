@@ -1,0 +1,17 @@
+CRITICAL - 2023-01-17 05:28:00 --> Undefined array key "PATH_INFO"
+in APPPATH/Views/layout/sidebar.php on line 19.
+ 1 APPPATH/Views/layout/sidebar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PATH_INFO"', 'APPPATH/Views/layout/sidebar.php', 19)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout/sidebar.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(431): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH/Views/layout/layout.php(47): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/layout/layout.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout/layout', [], true)
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('welcome_message', [], true)
+10 APPPATH/Controllers/Home.php(9): view('welcome_message')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Home->index()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')

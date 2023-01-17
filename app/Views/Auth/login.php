@@ -1,7 +1,7 @@
 <?= $this->extend($config->viewLayout) ?>
 <?= $this->section('main') ?>
 
-<h2 class="auth-title">Log in.</h2>
+<h5 class="text-success">Log in.</h5>
 				
 
 					<?= view('App\Views\Auth\_message_block') ?>
@@ -48,14 +48,14 @@
 
 						<br>
 
-						<button type="submit" class="btn btn-primary btn-block"><?=lang('Auth.loginAction')?></button>
+						<button type="submit" class="btn btn-success btn-block"><?=lang('Auth.loginAction')?></button>
 					</form>
 
 					<hr>
 
 
 <?php if ($config->activeResetter): ?>
-					<p><a href="<?= url_to('forgot') ?>"><?=lang('Auth.forgotYourPassword')?></a></p>
+					<p><a href="<?= url_to('forgot') ?>" class="text-success"><?=lang('Auth.forgotYourPassword')?></a></p>
 <?php endif; ?>
 
 

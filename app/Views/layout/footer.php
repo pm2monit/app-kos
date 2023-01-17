@@ -1,7 +1,7 @@
 <footer>
     <div class="footer clearfix mb-0 text-muted">
         <div class="float-start">
-            <p><?php echo date('Y'); ?> &copy; Menteng Park Apartemen</p>
+            <p><?php echo date('Y'); ?> &copy; Kostel Cendekia</p>
         </div>
         <div class="float-end">
             <p>Created with <span class="text-danger"><i class="bi bi-heart"></i></span> by <a href="#"> IT Functional </a></p>
