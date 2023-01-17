@@ -29,9 +29,7 @@
                     <a href="<?php echo base_url(); ?>"><img src="/assets/images/logo/logo.png" alt="Logo"/></a>
                 </div>
                 
-                <!-- <p class="auth-subtitle mb-5">
-                    Log in with your data that you entered during registration.
-                </p> -->
+                
                 <?= $this->renderSection('main') ?>
             </div>
             

@@ -1,6 +1,7 @@
 <?= $this->extend($config->viewLayout) ?>
 <?= $this->section('main') ?>
-<h2 class="auth-title">Register.</h2>
+
+<h5 class="text-success">Register.</h5>
 
 
                     <?= view('App\Views\Auth\_message_block') ?>
@@ -32,13 +33,13 @@
 
                         <br>
 
-                        <button type="submit" class="btn btn-primary btn-block"><?=lang('Auth.register')?></button>
+                        <button type="submit" class="btn btn-success btn-block"><?=lang('Auth.register')?></button>
                     </form>
 
 
                     <hr>
 
-                    <p><?=lang('Auth.alreadyRegistered')?> <a href="<?= url_to('login') ?>"><?=lang('Auth.signIn')?></a></p>
+                    <p><?=lang('Auth.alreadyRegistered')?> <a href="<?= url_to('login') ?>" class="text-success"><?=lang('Auth.signIn')?></a></p>
               
 
 <?= $this->endSection() ?>
