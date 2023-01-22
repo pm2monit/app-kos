@@ -18,20 +18,20 @@
         </div>
 
         <div class="card-body">
-        <table id="data_table" class="table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Kode pemilik</th>
-                <th>Harga</th>
-                <th>Harga semesteran</th>
-                <th>Deskripsi</th>
-                <th>Foto</th>
-                <th>Status isi</th>
-                <th></th>
-              </tr>
-            </thead>
-        </table>
+          <table id="data_table" class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Kode pemilik</th>
+                  <th>Harga</th>
+                  <th>Harga semesteran</th>
+                  <th>Deskripsi</th>
+                  <th>Foto</th>
+                  <th>Status isi</th>
+                  <th></th>
+                </tr>
+              </thead>
+          </table>
         </div>
 
       </div>
@@ -39,7 +39,9 @@
   </section>
 </div>
 
-      
 
+<?= $this->endSection() ?>
 
-  <?= $this->endSection() ?>
+<?= $this->section("pageScript") ?>
+
+<?= $this->endSection() ?>

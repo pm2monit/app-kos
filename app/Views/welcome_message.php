@@ -208,5 +208,12 @@
 </div>
 
 
+<?= $this->endSection() ?>
 
+<?= $this->section('pageScripts') ?>
+
+
+<!-- Need: Apexcharts -->
+<script src="/assets/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="/assets/js/pages/dashboard.js"></script>
 <?= $this->endSection() ?>

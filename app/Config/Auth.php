@@ -52,6 +52,7 @@ class Auth extends \Myth\Auth\Config\Auth
         'resend-activate-account' => 'resend-activate-account',
         'forgot'                  => 'forgot',
         'reset-password'          => 'reset-password',
+        'api'                     => ''
     ];
 
     /**

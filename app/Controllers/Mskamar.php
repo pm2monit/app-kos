@@ -88,16 +88,16 @@ class Mskamar extends BaseController {
         $response = array();
 
 		$fields['id'] = $this->request->getPost('id');
-$fields['kode_pemilik'] = $this->request->getPost('kode_pemilik');
-$fields['harga'] = $this->request->getPost('harga');
-$fields['harga_semesteran'] = $this->request->getPost('harga_semesteran');
-$fields['deskripsi'] = $this->request->getPost('deskripsi');
-$fields['foto'] = $this->request->getPost('foto');
-$fields['status_isi'] = $this->request->getPost('status_isi');
+		$fields['kode_pemilik'] = $this->request->getPost('kode_pemilik');
+		$fields['harga'] = $this->request->getPost('harga');
+		$fields['harga_semesteran'] = $this->request->getPost('harga_semesteran');
+		$fields['deskripsi'] = $this->request->getPost('deskripsi');
+		$fields['foto'] = $this->request->getPost('foto');
+		$fields['status_isi'] = $this->request->getPost('status_isi');
 
 
         $this->validation->setRules([
-			            'kode_pemilik' => ['label' => 'Kode pemilik', 'rules' => 'required|min_length[0]|max_length[255]'],
+			'kode_pemilik' => ['label' => 'Kode pemilik', 'rules' => 'required|min_length[0]|max_length[255]'],
             'harga' => ['label' => 'Harga', 'rules' => 'required|min_length[0]|max_length[255]'],
             'harga_semesteran' => ['label' => 'Harga semesteran', 'rules' => 'permit_empty|min_length[0]|max_length[255]'],
             'deskripsi' => ['label' => 'Deskripsi', 'rules' => 'required|min_length[0]|max_length[255]'],
@@ -134,16 +134,16 @@ $fields['status_isi'] = $this->request->getPost('status_isi');
         $response = array();
 		
 		$fields['id'] = $this->request->getPost('id');
-$fields['kode_pemilik'] = $this->request->getPost('kode_pemilik');
-$fields['harga'] = $this->request->getPost('harga');
-$fields['harga_semesteran'] = $this->request->getPost('harga_semesteran');
-$fields['deskripsi'] = $this->request->getPost('deskripsi');
-$fields['foto'] = $this->request->getPost('foto');
-$fields['status_isi'] = $this->request->getPost('status_isi');
+		$fields['kode_pemilik'] = $this->request->getPost('kode_pemilik');
+		$fields['harga'] = $this->request->getPost('harga');
+		$fields['harga_semesteran'] = $this->request->getPost('harga_semesteran');
+		$fields['deskripsi'] = $this->request->getPost('deskripsi');
+		$fields['foto'] = $this->request->getPost('foto');
+		$fields['status_isi'] = $this->request->getPost('status_isi');
 
 
         $this->validation->setRules([
-			            'kode_pemilik' => ['label' => 'Kode pemilik', 'rules' => 'required|min_length[0]|max_length[255]'],
+			'kode_pemilik' => ['label' => 'Kode pemilik', 'rules' => 'required|min_length[0]|max_length[255]'],
             'harga' => ['label' => 'Harga', 'rules' => 'required|min_length[0]|max_length[255]'],
             'harga_semesteran' => ['label' => 'Harga semesteran', 'rules' => 'permit_empty|min_length[0]|max_length[255]'],
             'deskripsi' => ['label' => 'Deskripsi', 'rules' => 'required|min_length[0]|max_length[255]'],

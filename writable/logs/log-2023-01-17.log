@@ -15,3 +15,427 @@ in APPPATH/Views/layout/sidebar.php on line 19.
 13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
 15 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:11:16 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:11:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:11:22 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:11:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:11:34 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:11:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:12:15 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:12:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:12:53 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:12:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:12:56 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:12:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:14:30 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:14:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
+ERROR - 2023-01-17 21:16:35 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('127.0.0.1', 'test2', '1', 'rumah_kos', 3306, '', 0)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/BaseModel.php(624): CodeIgniter\Model->doFirst()
+#5 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/mbt_dev/jobworld/kosapp/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Applications/M...')
+#13 {main}
+CRITICAL - 2023-01-17 21:16:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH/myth/auth/src/Authentication/LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH/myth/auth/src/Controllers/AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH/CodeIgniter.php(925): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
