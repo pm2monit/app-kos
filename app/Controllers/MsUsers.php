@@ -30,14 +30,15 @@ class MsUsers extends BaseController {
 	public function getAll() {
  		$response = $data['data'] = array();	
 		$totalRecord = $this->msUsersModel->select()->countAllResults();
+    
 		$postData = $this->request->getPost('data');
 		$draw = $postData['draw'];
 		$start = $postData['start'];
 		$rowperpage = $postData['length'];
 		$columnIndex = $postData['order'][0]['column']; 
-       	$columnName = $postData['columns'][$columnIndex]['data']; 
-       	$columnSortOrder = $postData['order'][0]['dir'];
-       	$searchValue = $postData['search']['value'];
+    $columnName = $postData['columns'][$columnIndex]['data']; 
+    $columnSortOrder = $postData['order'][0]['dir'];
+    $searchValue = $postData['search']['value'];
 
 		$result = $this->msUsersModel->select()->findAll($rowperpage, $start);
 		
